@@ -10,8 +10,8 @@ class MainController extends AppController {
     
        $this->setMeta(
            Tone::$app->getProperty('site_name'),
-           'TonePHP Starter KIT',
-           'TonePHP, starter kit'
+           'Y4T6 Project. The new way of everything.',
+           'Y4T6, Project, Y4T6 Project'
        );
     }
 }
