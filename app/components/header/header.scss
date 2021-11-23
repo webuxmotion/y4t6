@@ -1,0 +1,51 @@
+.header {
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 14px;
+
+    &__inner {
+        border: 2px solid black;
+        display: flex;
+    }
+
+    &__logo {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        text-decoration: none;
+        color: black;
+        height: 66px;
+        display: inline-flex;
+        align-items: center;
+        border-right: 1px solid black;
+        padding-right: 30px;
+        padding-left: 24px;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 12px;
+        height: 66px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    &__description-row {
+        
+        &:nth-child(2) {
+            padding-left: 12px;
+        }
+
+        &:nth-child(3) {
+            padding-left: 26px;
+        }
+    }
+}
