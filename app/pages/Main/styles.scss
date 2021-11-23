@@ -1,0 +1,30 @@
+.main-page {
+
+    &__top {
+        padding: 18px;
+        padding-top: 82px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    &__top-cell {
+        overflow-x: auto;
+    }
+
+    &__description {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: right;
+        max-width: 273px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        a {
+            font-weight: 500;
+            font-style: italic;
+            color: black;
+        }
+    }
+}
