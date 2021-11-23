@@ -70,6 +70,13 @@ ul {
 .header__inner {
   border: 2px solid black;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.header__column {
+  display: flex;
+  align-items: center;
 }
 .header__logo {
   font-family: Roboto;
@@ -103,4 +110,73 @@ ul {
 }
 .header__description-row:nth-child(3) {
   padding-left: 26px;
+}
+.header__phone-button {
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.nav {
+  border: 1px solid black;
+}
+.nav__list {
+  list-style: none;
+  display: inline-flex;
+}
+.nav__list-item {
+  position: relative;
+}
+.nav__list-item:not(:last-child, :nth-last-child(2)) .nav__item-link {
+  border-right: 1px solid black;
+}
+.nav__list-item:last-child:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  bottom: 13px;
+  width: 1px;
+  background-color: black;
+}
+.nav__item-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  padding-right: 30px;
+  padding-bottom: 13px;
+  padding-left: 30px;
+  padding-top: 13px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.nav__item-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.nav__item-link--icon-type {
+  padding-right: 46px;
+  padding-left: 46px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav__item-main-icon svg {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+.nav__item-top-right-icon {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+.nav__item-top-right-icon svg {
+  width: 17px;
+  height: auto;
+  display: block;
 }
