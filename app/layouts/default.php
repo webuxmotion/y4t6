@@ -12,8 +12,13 @@
   <link href="/dist/styles.css" rel="stylesheet">
 </head>
 <body>
-  <?=$this->component('header')?>
-  <?=$content?>
+  <div class="default-layout">
+    <div class="default-layout__main">
+      <?=$this->component('header')?>
+      <?=$content?>
+    </div>
+    <?=$this->component('footer')?>
+  </div>
   
   <script>
     var serverUrl = "<?=siteUrl()?>";

@@ -6,7 +6,7 @@
     </div>
     <div class="hero__content">
       <span class="hero__vertical-text">PROJECT</span>
-      <a href="/" class="hero__button">See details</a>
+      <a href="/catalog/otmn-v1-0" class="hero__button">See details</a>
       <h2 class="hero__big-text">OTMN V1.0</h2>
     </div>
   </div>

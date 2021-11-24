@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
     <div class="header__inner">
         <div class="header__column">
             <a href="/" class="header__logo">Y4T6 Project</a>
