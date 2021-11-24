@@ -9,7 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <link href="/dist/styles.css" rel="stylesheet">
+  <?php
+    $dist = getDist();
+    $styleTags = $dist['styles'];
+    $scriptTags = $dist['scripts'];
+  ?>
+  <?=$styleTags?>
 </head>
 <body>
   <div class="default-layout">
@@ -23,7 +28,7 @@
   <script>
     var serverUrl = "<?=siteUrl()?>";
   </script>
-  <script src="/dist/app.js"></script>
+  <?=$scriptTags?>
   <?=$scripts?>
 </body>
 </html>

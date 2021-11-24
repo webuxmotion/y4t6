@@ -282,6 +282,9 @@ ul {
 .members {
   border: 2px solid black;
 }
+.members__firstname {
+  font-size: 40px;
+}
 
 .not-found {
   display: flex;
