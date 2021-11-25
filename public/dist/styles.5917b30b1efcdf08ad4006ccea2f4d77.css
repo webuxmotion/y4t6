@@ -280,10 +280,49 @@ ul {
 }
 
 .members {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.members__info {
+  z-index: 1;
+}
+.members__card {
+  height: 260px;
+  min-width: 450px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
   border: 2px solid black;
 }
 .members__firstname {
-  font-size: 40px;
+  font-size: 72px;
+  line-height: 53px;
+  color: #CDCBC5;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.members__lastname {
+  font-size: 72px;
+  line-height: 53px;
+  color: #787878;
+  font-weight: 900;
+}
+.members__position {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 900;
+  margin-top: 25px;
+  margin-left: 150px;
+}
+.members__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
 }
 
 .not-found {
