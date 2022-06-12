@@ -1,59 +1,24 @@
 .hero {
-  border: 2px solid black;
-  display: inline-flex;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 
-  &__inner {
-    display: flex;
-    overflow-x: auto;
-    padding: 16px;
+  &__container {
+    max-width: 500px;
+    margin: 0 auto;
   }
 
-  &__images {
-    display: flex;
+  &__header {
+    margin-bottom: 15px;
+    font-size: 40px;
   }
 
-  &__content {
-    padding-left: 25px;
-    padding-right: 38px;
-    padding-top: 22px;
-    padding-bottom: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
+  h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
   }
 
-  &__button {
-    background-color: black;
-    color: white;
-    min-height: 78px;
-    display: inline-flex;
-    padding-right: 46px;
-    padding-left: 46px;
-    align-items: center;
-    font-size: 24px;
-    text-decoration: none;
-
-    &:hover {
-      background-color: #30343f;
-    }
-  }
-
-  &__vertical-text {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 28px;
-    position: absolute;
-    left: 70px;
-    transform: rotate(90deg);
-    transform-origin: 0 0;
-  }
-
-  &__big-text {
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 84px;
-    white-space: nowrap;
+  p {
+    font-size: 20px;
   }
 }

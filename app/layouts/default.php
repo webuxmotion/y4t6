@@ -19,7 +19,6 @@
 <body>
   <div class="default-layout">
     <div class="default-layout__main">
-      <?=$this->component('header')?>
       <?=$content?>
     </div>
     <?=$this->component('footer')?>
